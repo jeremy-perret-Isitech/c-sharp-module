@@ -1,7 +1,6 @@
 # c-sharp-module
 
-- Réponse question
-    ## Questionnaire C#
+- ## Questionnaire C#
 
     Question 1 :
 
@@ -95,8 +94,16 @@
         }
     }
     ```
+    
+    Question 4 :
 
-- notes
+    L’assembly est un ensemble de fichiers formant un project,permettant de pouvoir faire fonctionner celui-ci.
+
+    Le mot clé `private` permet de limité la parté de certains attribus dans une classe ou une méthode.
+
+    La porté private peut être utiliser pour ne pas rendre accéssible un attribue d’une classe depuis n’importe où, dans la plus part des cas, pour     accéder à cet attibue, il faudra utiliser un getter ou un setter.
+
+- ## Notes
 
     Question 1 : int vers short (conversion);
     
