@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/game-of-the-life.csproj": {}
+  },
+  "projects": {
+    "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/game-of-the-life.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/game-of-the-life.csproj",
+        "projectName": "game-of-the-life",
+        "projectPath": "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/game-of-the-life.csproj",
+        "packagesPath": "/home/jperret/.nuget/packages/",
+        "outputPath": "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/jperret/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.403/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
