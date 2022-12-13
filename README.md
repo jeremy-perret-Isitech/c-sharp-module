@@ -103,7 +103,7 @@
 
     La porté private peut être utiliser pour ne pas rendre accéssible un attribue d’une classe depuis n’importe où, dans la plus part des cas, pour     accéder à cet attibue, il faudra utiliser un getter ou un setter.
 
-- ##notes
+- ## Notes
 
     Question 1 : int vers short (conversion);
     
