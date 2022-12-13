@@ -1,5 +1,101 @@
 # c-sharp-module
 
+- Réponse question
+    ## Questionnaire C#
+
+    Question 1 :
+
+    Lors de la conversion d’un type signé vers le même type ayant une architecture signé inférieur, e résultat optenu pourrait ne pas être celui attendu.
+
+    Example, conversion d’un `short` signé en 64 bits vers un type `byte` signé en 8 bits.
+
+    ```csharp
+    short s = 300;
+    byte d = (byte)s;
+
+    Console.WriteLine("d = " + d); /// d = 44
+    ```
+
+    Dans le code ci dessus, la variable `d` de type `byte` ne peut pas contenir une valeur suppérieur à 255, car le type `byte` est signé 8 bits, sa capacité est limité à 2⁸ (256) valeurs possibles (valeur max 255 car 0 est la première valeur).
+
+    Ici `d` vaux 44 car si la variable atteint la limite de ça capacité elle recommence à 0.
+
+    Ce qui se passe ici :
+
+    300 - 256 = 44
+
+    300 est la valeur de `short s`;
+
+    256 est la valeur max que `byte s` peut contenir;
+
+    Question 2 :
+
+    Le type `enum` est une classe particulière qui contient l’énumération des différentes valeurs sous forme de constante pouvant être assigné.
+
+    Ce type est généralement assigné aux valeurs que serons pas modifiés.
+
+    ```csharp
+    /// Décrire le fonctionnement des enums en C# 
+    enum LesJoursDeLaSemaine
+    {
+        Lundi,
+        Mardi,
+        Mercredi,
+        Jeudi,
+        Vendredi,
+        Samedi,
+        Dimanche
+    }
+
+    LesJoursDeLaSemaine Weekend = LesJoursDeLaSemaine.Samedi | LesJoursDeLaSemaine.Dimanche;
+    ```
+
+    Dans le code ci-dessus, la variable `Weekend`, pourra contenir uniquement la valeur `Samedi` ou `Dimanche` .
+
+    Question 3 :
+
+    source : learn.microsoft.com
+
+    ```csharp
+    int[,] tableau = new int[3, 5];
+    int[,,] tableau2 = new int[5,6,8];
+
+    /// Différence entre ces deux synthaxes
+
+    int[][] tableau3 = new int[3][];
+    tableau3[0] = new int[] { 45, 2 };
+    tableau3[1] = new int[] { 34, 34, 67, 2 };
+    ```
+
+    Lors de la première instruction, la variable `tableau` est déclaré, c’est un tableau de `int` à 2 dimensions, initialisé avec trois colonnes et cinq lignes.
+
+    La seconde instruction déclare et initialise la variable `tableau2`, comme étant un tableau à 3 dimensions.
+
+    La première sintaxe montre l’initialisation de tableau à multiple dimension, avec un nombre de lignes et de colonnes défini, sans insérer de données dans celles ci.
+
+    Lors de la troisième instruction le `tableau3` est déclaré, c’est un array dit Jagged, c’est un tableau qui contient des tableau.
+
+    Dans les instructions suivantes un tableau de int est initialisé et inséré dans la ligne 0 et 1 du tableau `tableau3` .
+
+    Voici un code qui permettrais de parcourir un tableau multidimentionnels avec une boucle `for`.
+
+    ```csharp
+    int[][] tableau3 = new int[3][];
+    tableau3[0] = new int[] { 45, 2 };
+    tableau3[1] = new int[] { 34, 34, 67, 2 };
+
+    for(int i = 0; i < tableau3.Length; i++)
+    {
+        if(array[i] != null)
+        {
+            for(int y = 0; y < array[i].Length; y++)
+            {
+                    Console.WriteLine(array[i][y]);
+            }
+        }
+    }
+    ```
+
 - notes
 
     Question 1 : int vers short (conversion);
@@ -9,8 +105,6 @@
     Question 3 : Tableau multidimentionnels
     
     Question 4 : Que signifie le terme assembly, quand utiliser le mot cle “private” (cas réel);
-    
-    [Questionnaire C#](C#%2096eeb898e34345ddba19eac50f29ec43/Questionnaire%20C#%207a6a59aafd384bcbae937fe2bb2475db.md)
     
     o2n : “évaluation de la complexité et de l’optimisation de l’algorithme” (très simplifié).
     
@@ -295,99 +389,3 @@
             
             SuperClass file = new SuperClass();
             ```
-
-- Réponse question
-    ## Questionnaire C#
-
-    Question 1 :
-
-    Lors de la conversion d’un type signé vers le même type ayant une architecture signé inférieur, e résultat optenu pourrait ne pas être celui attendu.
-
-    Example, conversion d’un `short` signé en 64 bits vers un type `byte` signé en 8 bits.
-
-    ```csharp
-    short s = 300;
-    byte d = (byte)s;
-
-    Console.WriteLine("d = " + d); /// d = 44
-    ```
-
-    Dans le code ci dessus, la variable `d` de type `byte` ne peut pas contenir une valeur suppérieur à 255, car le type `byte` est signé 8 bits, sa capacité est limité à 2⁸ (256) valeurs possibles (valeur max 255 car 0 est la première valeur).
-
-    Ici `d` vaux 44 car si la variable atteint la limite de ça capacité elle recommence à 0.
-
-    Ce qui se passe ici :
-
-    300 - 256 = 44
-
-    300 est la valeur de `short s`;
-
-    256 est la valeur max que `byte s` peut contenir;
-
-    Question 2 :
-
-    Le type `enum` est une classe particulière qui contient l’énumération des différentes valeurs sous forme de constante pouvant être assigné.
-
-    Ce type est généralement assigné aux valeurs que serons pas modifiés.
-
-    ```csharp
-    /// Décrire le fonctionnement des enums en C# 
-    enum LesJoursDeLaSemaine
-    {
-        Lundi,
-        Mardi,
-        Mercredi,
-        Jeudi,
-        Vendredi,
-        Samedi,
-        Dimanche
-    }
-
-    LesJoursDeLaSemaine Weekend = LesJoursDeLaSemaine.Samedi | LesJoursDeLaSemaine.Dimanche;
-    ```
-
-    Dans le code ci-dessus, la variable `Weekend`, pourra contenir uniquement la valeur `Samedi` ou `Dimanche` .
-
-    Question 3 :
-
-    source : learn.microsoft.com
-
-    ```csharp
-    int[,] tableau = new int[3, 5];
-    int[,,] tableau2 = new int[5,6,8];
-
-    /// Différence entre ces deux synthaxes
-
-    int[][] tableau3 = new int[3][];
-    tableau3[0] = new int[] { 45, 2 };
-    tableau3[1] = new int[] { 34, 34, 67, 2 };
-    ```
-
-    Lors de la première instruction, la variable `tableau` est déclaré, c’est un tableau de `int` à 2 dimensions, initialisé avec trois colonnes et cinq lignes.
-
-    La seconde instruction déclare et initialise la variable `tableau2`, comme étant un tableau à 3 dimensions.
-
-    La première sintaxe montre l’initialisation de tableau à multiple dimension, avec un nombre de lignes et de colonnes défini, sans insérer de données dans celles ci.
-
-    Lors de la troisième instruction le `tableau3` est déclaré, c’est un array dit Jagged, c’est un tableau qui contient des tableau.
-
-    Dans les instructions suivantes un tableau de int est initialisé et inséré dans la ligne 0 et 1 du tableau `tableau3` .
-
-    Voici un code qui permettrais de parcourir un tableau multidimentionnels avec une boucle `for`.
-
-    ```csharp
-    int[][] tableau3 = new int[3][];
-    tableau3[0] = new int[] { 45, 2 };
-    tableau3[1] = new int[] { 34, 34, 67, 2 };
-
-    for(int i = 0; i < tableau3.Length; i++)
-    {
-        if(array[i] != null)
-        {
-            for(int y = 0; y < array[i].Length; y++)
-            {
-                    Console.WriteLine(array[i][y]);
-            }
-        }
-    }
-    ```
