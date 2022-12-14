@@ -1,0 +1,5 @@
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Release/net6.0/win-x64/publish/game-of-the-life.exe
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Release/net6.0/win-x64/publish/game-of-the-life.deps.json
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Release/net6.0/win-x64/publish/game-of-the-life.runtimeconfig.json
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Release/net6.0/win-x64/publish/game-of-the-life.pdb
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Release/net6.0/win-x64/publish/game-of-the-life.dll

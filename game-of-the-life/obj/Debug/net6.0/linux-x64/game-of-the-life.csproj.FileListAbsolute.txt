@@ -1,0 +1,15 @@
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Debug/net6.0/linux-x64/game-of-the-life
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Debug/net6.0/linux-x64/game-of-the-life.deps.json
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Debug/net6.0/linux-x64/game-of-the-life.runtimeconfig.json
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Debug/net6.0/linux-x64/game-of-the-life.dll
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/bin/Debug/net6.0/linux-x64/game-of-the-life.pdb
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.csproj.AssemblyReference.cache
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.GeneratedMSBuildEditorConfig.editorconfig
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.AssemblyInfoInputs.cache
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.AssemblyInfo.cs
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.csproj.CoreCompileInputs.cache
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.dll
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/refint/game-of-the-life.dll
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.pdb
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/game-of-the-life.genruntimeconfig.cache
+/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/obj/Debug/net6.0/linux-x64/ref/game-of-the-life.dll
