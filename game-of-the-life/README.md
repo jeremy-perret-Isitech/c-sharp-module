@@ -7,7 +7,7 @@
 Options: 
 
 - Change the size of the grid
-- Place square n the grid with cursor
+- Place square on the grid with cursor
 - Generate random completed grid
 - Restart a game with a saved grid size
 
