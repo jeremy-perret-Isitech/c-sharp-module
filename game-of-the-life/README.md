@@ -2,7 +2,7 @@
 
 ## The game of the life in console app with C# .NET 6.0
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/d6c83a1a-7e88-4d94-8c6e-52a21c89b002/Untitled.png)
+![game-of-the-life-c-sharp](https://i.ibb.co/nbPQVkS/game-of-the-life-c-sharp.png)
 
 Options: 
 
