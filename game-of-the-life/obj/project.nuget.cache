@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "mJPwW21VxOYWELwJaI2odCEzwK/ocI70v7JxLRtdLWhDUL2kxP+0DfvmtMRM8UBhZhHpVKof25JJl536eOm/Ew==",
+  "dgSpecHash": "AsKe5qeeViSz8Tb4xjr7EILw4d0f9y9PfMjkbben02AcL808ZABa3xUtcIPp/Sl3+xMKm+YavL3WoLicMtN2UA==",
   "success": true,
   "projectFilePath": "/home/jperret/Documents/Ecole/c-sharp-console-game/game-of-the-life/game-of-the-life.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/jperret/.nuget/packages/microsoft.netcore.app.runtime.linux-x64/6.0.11/microsoft.netcore.app.runtime.linux-x64.6.0.11.nupkg.sha512",
+    "/home/jperret/.nuget/packages/microsoft.aspnetcore.app.runtime.linux-x64/6.0.11/microsoft.aspnetcore.app.runtime.linux-x64.6.0.11.nupkg.sha512",
+    "/home/jperret/.nuget/packages/microsoft.netcore.app.crossgen2.linux-x64/6.0.11/microsoft.netcore.app.crossgen2.linux-x64.6.0.11.nupkg.sha512"
+  ],
   "logs": []
 }
