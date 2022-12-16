@@ -1,0 +1,220 @@
+{
+	"info": {
+		"_postman_id": "c1ef1f11-6b4f-408e-8e59-abc7f5aa4580",
+		"name": "C-SharpAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Car by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Receive XML Response",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/xml",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://localhost:7074/api/Car/56776e92-6bca-4bf2-b925-c87d47928547",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7074",
+					"path": [
+						"api",
+						"Car",
+						"56776e92-6bca-4bf2-b925-c87d47928547"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all car list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:{{port}}/api/Car/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"Car",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"56776e92-6bca-4bf2-b925-c87d47928541\",\n    \"Model\": \"BM-765\",\n    \"Brand\": \"BMW\",\n    \"Year\": 2008,\n    \"Color\": \"grey\",\n    \"SmartDescription\": \"Smart Desc\",\n    \"FullDescription\": \"FUll Description\",\n    \"Price\": 15500,\n    \"State\": \"Old\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{port}}/api/Car/create",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"Car",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update existing Car",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"type": "text",
+						"value": "application/xml",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Id\": \"56776e92-6bca-4bf2-b925-c87d47928547\",\n    \"Model\": \"lamborghini\",\n    \"Brand\": \"LI-637\",\n    \"Year\": 2012,\n    \"Color\": \"Yellow\",\n    \"SmartDescription\": \"Smart desc\",\n    \"FullDescription\": \"Full description\",\n    \"Price\": 1200,\n    \"State\": \"Old\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:{{port}}/api/Car/56776e92-6bca-4bf2-b925-c87d47928547/update",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"Car",
+						"56776e92-6bca-4bf2-b925-c87d47928547",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car by ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7074/api/Car/56776e92-6bca-4bf2-b925-c87d47928547/delete",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7074",
+					"path": [
+						"api",
+						"Car",
+						"56776e92-6bca-4bf2-b925-c87d47928547",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Filter car list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"SearchField\": \"\",\n    \"model\": [\n        \"\"\n    ],\n    \"brand\": [\n        \"\"\n    ],\n    \"year\": [ 2008 ],\n    \"color\": [\n        \n    ],\n    \"price\": 0,\n    \"state\": []\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7074/api/Car/filter",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7074",
+					"path": [
+						"api",
+						"Car",
+						"filter"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "port",
+			"value": "7074"
+		}
+	]
+}

@@ -37,7 +37,7 @@
                     {
                         if(cursorPosition[0] == row && cursorPosition[1] == column)
                         { 
-                            line += "🟥";
+                            line += "+";
                         }else
                         {
                             line += formatCellule(grid[row, column].getState());
@@ -64,7 +64,7 @@
         /// Cast the state of a cellule to square of color (alive: black, dead: white).
         static string formatCellule(string celluleState)
         {
-            return celluleState == "alive" ? "⬛" : "⬜";
+            return celluleState == "alive" ? "@" : "`";
         }
 
 
